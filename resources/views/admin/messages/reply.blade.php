@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title','Add Room')
+@section('title','Messages')
 @section('body')
 <div class="col-sm-10">
         
@@ -47,6 +47,6 @@
 @endsection
 @section('custom_js')
 <script type="text/javascript">
-      $("#Add_Room").addClass('active');
+      $("#Messages").addClass('active');
 </script>
 @endsection

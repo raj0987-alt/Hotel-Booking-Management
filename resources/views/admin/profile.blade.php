@@ -20,9 +20,8 @@
 
 <button class="btn btn-success" type="submit">Update</button>
 </form>
-<hr>
 
-       <p >For update type new value</p>    
+
 
 
 

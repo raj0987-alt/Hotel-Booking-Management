@@ -26,8 +26,7 @@ Change Password
 <tr>
 
 <td>SN</td>
-<th>Rference No</th>
-<th>Message Body</th>
+<th>Messages</th>
 <th>Replied</th>
 <th>Last Update</th>
 <th>Status</th>
@@ -35,9 +34,8 @@ Change Password
 @foreach($message as $key=>$msg)
 <tr>
   <td>{{$key+1}}</td>
-  <td>{{$msg->id}}</td>
   <td>{{$msg->message_body}}</td>
-  <td>{{$msg->message_replied}}</td>
+  <td>{{$msg->replied_message}}</td>
   <td>{{$msg->updated_at}}</td>
   @if($msg->status=='replied')
   <td>Closed</td>

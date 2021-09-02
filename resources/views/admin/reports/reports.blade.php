@@ -72,3 +72,8 @@
         }
     </script>
     @endsection
+    @section('custom_js')
+<script type="text/javascript">
+      $("#Reports").addClass('active');
+</script>
+@endsection

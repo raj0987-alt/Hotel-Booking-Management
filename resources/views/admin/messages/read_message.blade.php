@@ -19,7 +19,7 @@
     </div>
        
       <hr>
-            <div class="col-xs-10">
+            <div class="col-xs-12">
 <table style="width: 100%;">
 
     <tr class="title">
@@ -29,6 +29,7 @@
 <th>Email</th>
 <th>Phone Number</th>
 <th>Messages</th>
+<th>Replied </th>
 <th>Messages Date</th>
     </tr>
 @foreach($read_msg as $key=>$msg)
@@ -42,6 +43,7 @@
 	<td>{{$msg->email}}</td>
 	<td>{{$msg->mobile}}</td>
 	<td>{{$msg->message_body}}</td>
+  <td>{{$msg->replied_message}}</td>
 	<td>{{$msg->created_at}}</td>
 </tr>
 @endforeach

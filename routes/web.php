@@ -24,9 +24,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Fronted Route Configuration
 Route::namespace('Fronted')->group(function(){
 Route::get('rooms','RoomController@index')->name('rooms');
+Route::post('rooms_check','RoomController@checkAvailableRoom')->name('room.checkAvail');
+Route::get('rooms_table','RoomController@roomTable')->name('room.table');
+Route::get('rooms_details/{id}','RoomController@Details')->name('room.details');
 Route::match(['get','post'],'rooms/book_now/{id}','RoomController@Booking')->name('room.book_now');
 Route::get('room/availability/{id}','BookingController@checkAvail')->name('room.availability');
 Route::post('room/booking_confirmation/{id}','BookingController@store')->middleware('auth')->name('room.booking_confirmation');
+Route::post('room/booking_request','BookingController@BookNow')->middleware('auth')->name('room.booking');
 Route::get('/galleries','OtherController@Gallery')->name('gallery');
 Route::get('/contact_us','OtherController@Contact')->name('contact');
 Route::post('/contact_us','OtherController@Contact_store')->name('contact.store');

@@ -12,7 +12,7 @@
 <div class="col-md-3">
     <!-- Button trigger modal -->
 <a href="#exampleModal" type="button" class="btn btn-info" data-toggle="modal" data-target="">
-  Search By Room & Date
+  Search Rooms
 </a>
 </div>
 </div>

@@ -207,7 +207,9 @@ transform: scale(2.3);
     left: 10px;
     bottom: 10px;
     right: 10px;
-    background: rgba(197, 193, 193, 0.5); 
+    width: 300px;
+    height: 200px;
+    background: rgba(223, 61, 61, 0.5); 
     transform: scaleY(0);
     transition: transform .5s;
    
@@ -224,7 +226,7 @@ transform: scale(2.3);
     transform: translateY(-50%);
     text-align: center;
     padding: 10px 80px;
-    color: blue;
+    color: rgb(234, 234, 240);
     justify-content: center;
 }
 
@@ -340,4 +342,69 @@ padding: 0 150px;
     text-decoration: none;
     color: #333;
     font-weight: 600;
+}
+
+
+.check {
+
+justify-content: center;
+background: rgb(194, 235, 231);
+height: auto;
+width: 90%;
+margin-left: 80px;
+padding: 15px;
+font-weight: bold;
+
+}
+
+.check #form{
+
+font-size: 18px;
+    
+}
+
+.check label{
+
+    padding: 20px;
+}
+
+.col-md-3 button{
+ position: absolute;
+    text-decoration: none;
+    top: 50%;
+    font-size: 18px;
+
+}
+
+/*
+.checkAvail{
+   
+    transform: translate(-50%, -50%);
+}
+/*
+.checkAvail a{
+    text-decoration: none;
+    color:rgb(4, 4, 4);
+    font-size: 18px;
+    font-weight: bold;
+   background-color: rgb(223, 233, 28);
+    padding: 10px 20px;
+}
+
+.checkAvail a:hover{
+
+    color: black;
+    background-color: rgb(211,211,211);
+    text-decoration: none;
+}*/
+
+.table {
+
+
+    text-align: left;
+   margin: 0 0 0 30px;
+
+
+}
+
 }

@@ -26,7 +26,7 @@ class RoomController extends Controller
     public function InsertRoom(Request $request){
     	$this->validate($request, [
       'room_name'   => 'required',
-      'room_number'  => 'required',
+      'room_number'  => 'required|unique:rooms',
       'room_type'  => 'required',
       'price'  => 'required',
       'max_capacity'  => 'required',
